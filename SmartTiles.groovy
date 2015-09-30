@@ -166,7 +166,7 @@ def videoStreamsMJPEG() {
 }
 
 def shortcuts() {
-	dynamicPage(name: "links", title: "Shortcuts", install: false) {
+	dynamicPage(name: "shortcuts", title: "Shortcuts", install: false) {
 		section() {
 			href "dashboards", title: "Links to other dashboards"
 		}
