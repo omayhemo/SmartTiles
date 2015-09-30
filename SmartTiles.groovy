@@ -609,6 +609,29 @@ def footer() {
 	// for scroll bar appear;
 	\$(window).trigger("resize");
 });
+</script>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/cubiq/add-to-homescreen/master/style/addtohomescreen.css">
+
+
+<script>
+\$(function () {
+
+if (window.location.hash != "#ath") {
+
+	var script = document.createElement('script');
+	script.src = "https://cdn.rawgit.com/cubiq/add-to-homescreen/master/src/addtohomescreen.min.js";
+	script.onload = function () {
+		var addtohome = addToHomescreen({
+   			autostart: false
+		});
+		addtohome.clearSession(); 
+    	addtohome.show(); 
+    	window.location.hash = "#ath";
+	}
+    document.head.appendChild(script);
+}
+
+});
 </script>"""
 }
 
