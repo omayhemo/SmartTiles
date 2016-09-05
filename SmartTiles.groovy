@@ -716,7 +716,7 @@ ${getThemeLightIcon().css}
 
 def getTSize() {
 	if (tileSize == "Medium") return 120
-	else if (tileSize == "Large") return 150
+	else if (tileSize == "Large") return 180
 	105
 }
 
